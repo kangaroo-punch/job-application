@@ -7,6 +7,55 @@
     <title>Application</title>
 </head>
 <body>
+
+    <header>
+        <img src="./assets/FPP14152-BLACK-POST.jpg" alt="">
+        <h1>Food Taster Application</h1>
+    </header>
+
+    <main>
+        <form id="food-taster-application">
+            <section>
+                <h2>About You</h2>
+
+                <p>
+                    <label for="">Name: </label>
+                    <input type="text">
+                </p>
+
+                <fieldset>
+                    <legend>Are you 21?</legend>
+
+                    <input type="radio">
+                    <label for="">Yes</label>
+                    <input type="radio">
+                    <label for="">No</label>
+                </fieldset>
+
+                <p>
+                    <label for="">What is your favorite cousine?</label>
+                    <select name="" id="">
+                        <option value="" hidden disabled selected>Please select cousine.</option>
+                        <option value="">Indian</option>
+                        <option value="">Chinese</option>
+                        <option value="">Thai</option>
+                        <option value="">Italian</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend>
+                        When do you like to eat?
+                    </legend>
+                    <input name="meals" value="breakfast" type="checkbox">
+                    <label>Breakfast</label>
+                    <input name="meals" value="lunch" type="checkbox">
+                    <label>Lunch</label>
+                    <input name="meals" value="dinner" type="checkbox">
+                    <label>Dinner</label>
+                </fieldset>
+            </section>
+        </form>
+    </main>
     
 </body>
 </html>
