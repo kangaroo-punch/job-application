@@ -9,5 +9,3 @@ form.addEventListener('submit', (event) => {
     const applicant = getApplicant(formData);
     console.log(applicant);
 }); 
-
-// subscribe to event, submit button
