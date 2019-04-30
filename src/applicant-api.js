@@ -5,7 +5,7 @@ const applicantApi = {
     },
     get() {
         const json = localStorage.getItem('applicant');
-        const applicant = JSON.parse('json');
+        const applicant = JSON.parse(json);
         return applicant;
     }
 }
