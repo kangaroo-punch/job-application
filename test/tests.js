@@ -7,7 +7,7 @@ test('return completed form in object', function(assert) {
         is21: true,
         cuisine: 'indian',
         meals: ['breakfast', 'lunch'],
-        likeFood: 10,
+        likeFood: 10
     };
 
     const formData = new FormData();
