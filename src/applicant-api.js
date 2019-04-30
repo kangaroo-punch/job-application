@@ -8,5 +8,5 @@ const applicantApi = {
         const applicant = JSON.parse(json);
         return applicant;
     }
-}
+};
 export default applicantApi;
