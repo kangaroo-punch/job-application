@@ -3,6 +3,7 @@ const test = QUnit.test;
 
 test('round-trip applicant', function(assert) {
     //Arrange
+    localStorage.removeItem('applicants');
     const applicant = { 
         name: 'wes'
     };
