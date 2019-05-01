@@ -32,8 +32,8 @@ test('no applicants on local storage returns empty array', function(assert) {
 test('two saves return array with two items', function(assert) {
     //Arrange
     localStorage.removeItem('applicants');
-    const applicant1 = { name: 'name 1'};
-    const applicant2 = { name : 'name 2'};
+    const applicant1 = { name: 'name 1' };
+    const applicant2 = { name : 'name 2' };
     const expected = [applicant1, applicant2];
 
     applicantApi.save(applicant1);
