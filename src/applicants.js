@@ -9,19 +9,19 @@ for(let i = 0; i < applicants.length; i++) {
 
     const tr = document.createElement('tr');
 
-    const nameCell = document.getElementById('td');
+    const nameCell = document.createElement('td');
     nameCell.textContent = applicant.name;
     tr.appendChild(nameCell);
 
-    const is21Cell = document.getElementById('td');
+    const is21Cell = document.createElement('td');
     is21Cell.textContent = applicant.is21;
     tr.appendChild(is21Cell);
 
-    const cuisineCell = document.getElementById('td');
-    cuisineCell.textContent = applicant.name;
+    const cuisineCell = document.createElement('td');
+    cuisineCell.textContent = applicant.cuisine;
     tr.appendChild(cuisineCell);
 
-    const mealsCell = document.getElementById('td');
+    const mealsCell = document.createElement('td');
     let mealsList = '';
     if(applicant.meals) {
         mealsList = applicant.meals.join(', ');
@@ -29,9 +29,5 @@ for(let i = 0; i < applicants.length; i++) {
     mealsCell.textContent = mealsList;
     tr.appendChild(mealsCell);
 
-    const likeFoodCell = document.getElementById('td');
-    likeFoodCell.textContent = applicant.name;
-    tr.appendChild(likeFoodCell);
-    
     tbody.appendChild(tr);
 }
