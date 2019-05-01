@@ -1,4 +1,25 @@
 body {
     text-align: center;
-    max-width: 550px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 10em;
+}
+
+thead {
+    font-weight: bolder;
+    background: grey;
+    color: white;
+}
+
+td {
+    padding: 8px, 5px;
+
+}
+
+tbody tr:nth-child(even) {
+    background: black;
+    color: white;
 }

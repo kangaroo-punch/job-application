@@ -9,4 +9,7 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
     const applicant = getApplicant(formData);
     applicantApi.save(applicant);
+
+    window.location = '../thank-you.html';
 }); 
+
