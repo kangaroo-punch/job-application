@@ -6,9 +6,15 @@ const applicantApi = {
         const json = JSON.stringify(applicants);
         applicantApi.storage.setItem('applicants', json);
     },
-    get() {
+    get(name) {
         const applicants = applicantApi.getAll();
-        return applicants[0];
+    
+        for(let i = 0; i < applicants.length; i++) {
+            const applicant = applicants[i];
+            if(applicants.name === name) {
+                return applicant;
+            }
+        }
     },
     getAll() {
         const json = applicantApi.storage.getItem('applicants');
