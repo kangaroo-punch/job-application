@@ -1,15 +1,21 @@
-// import our utility object for getting data
 import applicantApi from './applicant-api.js';
 
-// reference all the dom elements to update
 const name = document.getElementById('name');
 const is21 = document.getElementById('is21');
 const cuisine = document.getElementById('cuisine');
 const meals = document.getElementById('meals');
 const likeFood = document.getElementById('like-food');
 
+// get the applicant name
+
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('name');
+
+console.log(id);
+console.log(window.location.search);
 // get our applicant from the API
-const applicant = applicantApi.get();
+const applicant = applicantApi.get(id);
+console.log(applicant, 'in applicant.js');
 
 //no applicant? no can do, head back to home page...
 if(!applicant) {
