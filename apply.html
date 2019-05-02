@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Application</title>
+</head>
+<body>
+
+    <header>
+        <img src="./assets/FPP14152-BLACK-POST.jpg" alt="pizza">
+        <h1>Food Taster Application</h1>
+    </header>
+    
+    <main>
+        <form id="food-taster-application">
+            <section>
+                <h2>About You</h2>
+                <div>
+                    <label for="">Name: </label>
+                    <input id="name" type="text" name="name">
+                </div>
+            </section>
+                
+            <fieldset>
+                <legend>Are you 21?</legend>
+
+                <input id="yes" type="radio" value="yes" name="is21" required>
+                <label for="yes">Yes</label>
+                <input id="no" type="radio" value="no" name="is21">
+                <label for="no">No</label>
+            </fieldset>
+
+            <section>
+                <label for="cuisine">What is your favorite cuisine?</label>
+                <select id="cuisine" name="cuisine">
+                    <option value="" hidden disabled selected>Please select cuisine.</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="thai">Thai</option>
+                    <option value="italian">Italian</option>
+                </select>
+            </section>
+
+            <fieldset>
+                <legend>
+                    When do you like to eat?
+                </legend>
+                <input id="breakfast" name="meals" value="breakfast" type="checkbox">
+                <label for="breakfast">Breakfast</label>
+                <input id="lunch" name="meals" value="lunch" type="checkbox">
+                <label for="lunch">Lunch</label>
+                <input id="dinner" name="meals" value="dinner" type="checkbox">
+                <label for="dinner">Dinner</label>
+            </fieldset>
+
+            <section>
+                <label for="like-food"> How much you like food?</label>
+                <input id="like-food" name="like-food" type="range" min="1" max="10" required>
+            </section>
+
+            <section>
+                <h3>Are you sure?</h3>
+                <button>Submit</button>
+            </section>
+        </form>
+    </main>
+    
+    <script type="module" src="./src/apply.js"></script>
+</body>
+</html>
