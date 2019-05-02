@@ -11,11 +11,8 @@ const likeFood = document.getElementById('like-food');
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('name');
 
-console.log(id);
-console.log(window.location.search);
 // get our applicant from the API
 const applicant = applicantApi.get(id);
-console.log(applicant, 'in applicant.js');
 
 //no applicant? no can do, head back to home page...
 if(!applicant) {

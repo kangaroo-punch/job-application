@@ -8,10 +8,8 @@ const applicantApi = {
     },
     get(name) {
         const applicants = applicantApi.getAll();
-        console.log(name);
         for(let i = 0; i < applicants.length; i++) {
             const applicant = applicants[i];
-            console.log(applicant);
             if(applicant.name === name) {
                 return applicant;
             }

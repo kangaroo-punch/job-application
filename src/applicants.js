@@ -6,7 +6,6 @@ const applicants = applicantApi.getAll();
 
 for(let i = 0; i < applicants.length; i++) {
     const applicant = applicants[i];
-    console.log(applicant.name);
 
     const tr = document.createElement('tr');
 
@@ -14,7 +13,6 @@ for(let i = 0; i < applicants.length; i++) {
     const link = document.createElement('a');
     const searchParams = new URLSearchParams();
     searchParams.set('name', applicant.name);
-    console.log(searchParams);
     link.href = 'applicant.html?' + searchParams.toString();
     link.textContent = applicant.name;
     nameCell.appendChild(link);
