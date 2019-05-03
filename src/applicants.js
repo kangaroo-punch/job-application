@@ -18,8 +18,6 @@ for(let i = 0; i < applicants.length; i++) {
     nameCell.appendChild(link);
     tr.appendChild(nameCell);
 
-
-
     const is21Cell = document.createElement('td');
     is21Cell.textContent = applicant.is21;
     tr.appendChild(is21Cell);
